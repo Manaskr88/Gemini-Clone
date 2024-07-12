@@ -1,4 +1,6 @@
-#Gemini Clone
+**Gemini Clone**
+
+
 A React-based clone of the Gemini app, built to demonstrate the power of conversational AI.
 
 Demo:
