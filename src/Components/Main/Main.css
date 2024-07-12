@@ -1,0 +1,288 @@
+.main{
+    flex:1;
+    padding-bottom: 10vh;
+    min-height: 100vh;
+    position: relative;
+    /* background: black; */
+
+}
+
+.nav{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    font-size:20px;
+    padding:20px;
+    color:#585858
+}
+.gem{
+    display: flex;
+    align-items: center;
+}
+.manas{
+    display: flex;
+    justify-content: end;
+    gap:10px;
+    align-items: center;
+    
+
+}
+
+.manas img{
+    width:30px;
+    height: 40px;
+}
+.manas button{
+    background-color: #dfe4ea;
+    color: rgb(96, 21, 21);
+    border-radius: 20px;
+    height:30px;
+    width:170px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    /* gap:3px; */
+    cursor: pointer;
+}
+
+.manas button img{
+    width:20px;
+    height: 20px;
+
+}
+
+.nav img{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.option{
+    border: 0;
+    outline: 0;
+    font-size:20px;
+    background-color: #ffffff
+
+}
+
+
+
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.greet{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    margin:50px 0px;
+    padding: 20px;
+    color: #c4c7c5;
+}
+
+.greet span{
+    /* color:rgb(64, 35, 91); */
+    background: -webkit-linear-gradient(15deg , #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+
+    /* -webkit-background-clip:text ;  */
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+
+
+
+}
+
+.greet p{
+    /* color:#585858; */
+    font-weight: 400;
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    gap:14px;
+    padding:18px
+}
+
+.card{
+    background-color: #f0f4f9;
+
+    padding:13px
+
+    ;height:190px;
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card img{
+    width:30px;
+    padding:5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    bottom:8px;
+    right:10px
+}
+
+.card p{
+    color:#585858;
+    font-size:15px
+}
+
+.card:hover{
+    background-color: #dfe4ea;
+}
+
+.main-bottom{
+    position: absolute;
+    bottom:0;
+    /* width:100% */
+    padding: 0px 20px ;
+
+}
+.search{
+    /* width:600px; */
+    height:50px;
+    background-color:#f0f4f9;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+
+    margin-top: 70px;
+    /* margin-left: 10px; */
+    position: relative;
+    
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    flex:1;
+    padding: 15px;
+    color: black;
+    font-size:15px;
+
+}
+ .imgg{
+    display: flex;
+    gap:8px;
+    color:white;
+    padding:15px;
+    cursor: pointer;
+    align-items: center;
+    /* width: 24px; */
+
+ }
+
+.search img{
+    width:23px;
+    color:white
+}
+
+.footer{
+    margin-top:40px;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+}
+
+.resultt {
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.resultt::-webkit-scrollbar{
+     display: none;
+}
+
+.resultt img{
+    width:35px;
+    height:30px;
+    border-radius: 50%;
+}
+
+.result-title {
+    display: flex;
+    gap:18px;
+    align-items: center;
+    font-weight: 500;
+    margin: 40px 0px;
+}
+
+.result-data{
+    display: flex;
+    flex-direction: column;;
+    margin-top: 10px;
+    gap:15px;
+    align-items: start;
+}
+
+.result-data p{
+    margin-top: 12px;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 15px;
+
+}
+
+.loader{
+    width: 100%;
+    gap:8px;
+    flex-direction: column;
+    display: flex;
+}
+ 
+.loader hr{
+    color:aqua;
+    border-radius: 4px;
+    border: none;
+    background-color: #f6fff6 ;
+    background: linear-gradient(to left , #4b90ff , #ffffff , #4b90ff);
+    background-size: 700px 50px;
+    height:18px;
+    animation: loader 3s infinite linear;
+
+}
+
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+
+    }
+
+    100%{
+        background-position: 800px 0px;
+
+
+    }
+    
+}
+
+@media (max-width:600px) {
+    .main-bottom input{
+        flex:none;
+        width:150px
+    }
+
+    .main-bottom image{
+        width: 20px;
+
+
+    }
+
+    .search{
+        padding:5px 10px 
+    }
+    .search div{
+        gap:5px
+    }
+    
+}
