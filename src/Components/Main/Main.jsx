@@ -18,7 +18,7 @@ const Main = () => {
 
       <div className="nav">
         <div className="gem">
-          <p data-theme-toggle >Gemini</p>
+          <p  >Gemini</p>
               
 
             {/* </select> */}
@@ -91,7 +91,7 @@ const Main = () => {
             <input onChange={(e) => setInput(e.target.value)} value={input} type='text' placeholder='Enter To Search' />
 
             <div className='imgg'>
-              <img onclick="open_file()" src={assets.gallery_icon} alt="" />
+              <img  src={assets.gallery_icon} alt="" />
               <img src={assets.mic_icon} alt="" />
                      {/*onclick send function from context.jsx */}
               {input?<img onClick={() => send()} src={assets.send_icon} alt="" /> :null }   
@@ -109,6 +109,6 @@ const Main = () => {
     </div>
   )
 }
-<script src="Mode.js" ></script>
+{/* <script src="Mode.js" ></script> */}
 
 export default Main
